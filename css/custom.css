@@ -96,7 +96,6 @@ body ul{/*Strip all list styling for whole page*/
     body{
         background: #6C4A4A;
     }
-    #about, #skill,
 }
 
 /*tablet styles*/
@@ -122,9 +121,6 @@ body ul{/*Strip all list styling for whole page*/
         padding-right: 5px;
         padding-left: 400px;
         width: 65%;
-    }
-    #about p,#skill p,#project p,#goodbye p{
-        90
     }
 }
 /* ------------ ‘SIDEBAR ------------*/
