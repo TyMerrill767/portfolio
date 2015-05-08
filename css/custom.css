@@ -1,0 +1,167 @@
+/*
+
+Developer: Tyler Merrill
+
+Table of Contents
+
+RESET - normalize.css reference
+
+HEADER - Site name, logo, main menu
+
+SIDEBAR - Submenu, search bar, shortlists
+
+MAIN CONTENT - Articles, search results
+
+FOOTER – Copyright
+
+Color Palette
+
+#1e2422 - Outer Space
+
+*/
+
+/* ------------ ‘RESET ------------*/
+@import url("normalize.css");
+@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400italic|Scheherazade|Poiret+One|Hind:500,400|Play:700);
+
+/* ------------ ‘HEADER ------------*/
+/*global styles*/
+header{
+    background: #000;
+    color: #fff;
+    font: 100% "";
+    text-align: center;
+}
+.navbar li a{
+    display: block;
+}
+/*mobile styles*/
+@media only screen and (max-width:480px){
+
+}
+
+/*tablet styles*/
+@media only screen and (min-width: 481px) and (max-width:768px){
+
+}
+
+/*desktop styles*/
+@media only screen and (min-width:769px){
+
+}
+
+/* ------------ ‘MAIN CONTENT------------*/
+/*global styles*/
+body{
+    font: 150% "Poiret One";
+}
+body p{
+    padding-left: 10px;
+}
+body h2{
+    padding-left: 5px;
+}
+body ul{/*Strip all list styling for whole page*/
+    list-style-type: none;
+    text-decoration: none;
+}
+#project img{
+	width: 15em;
+	height: 15em;
+	display: block;
+	border-radius: 110px;
+	margin: 0 3em 1.5em 0;
+}
+/*.projects-container{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: flex-start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+}
+.restaurant, .techresearch, .discography{
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 50px;
+    padding: 5px;
+    width: 51%;
+}*/
+
+/*mobile styles*/
+@media only screen and (max-width:480px){
+    body{
+        background: #6C4A4A;
+    }
+    #about, #skill,
+}
+
+/*tablet styles*/
+@media only screen and (min-width: 481px) and (max-width:768px){
+    body{
+        background: #4D533C;
+    }
+}
+
+/*desktop styles*/
+@media only screen and (min-width:769px){
+    body{
+        background: #394953;
+    }
+    #about, #skill{
+    clear:both;
+    float: left;
+    height: 30em;
+    width: 65%;
+    }
+    #project, #contact{
+        float: right;
+        padding-right: 5px;
+        padding-left: 400px;
+        width: 65%;
+    }
+    #about p,#skill p,#project p,#goodbye p{
+        90
+    }
+}
+/* ------------ ‘SIDEBAR ------------*/
+/*global styles*/
+
+/*mobile styles*/
+@media only screen and (max-width:480px){
+
+}
+
+/*tablet styles*/
+@media only screen and (min-width: 481px) and (max-width:768px){
+
+}
+
+/*desktop styles*/
+@media only screen and (min-width:769px){
+
+}
+/* ------------ ‘FOOTER ------------*/
+/*global styles*/
+footer{
+    clear: both;
+    text-align: center;
+    padding-top: 35em;
+}
+/*mobile styles*/
+@media only screen and (max-width:480px){
+
+}
+
+/*tablet styles*/
+@media only screen and (min-width: 481px) and (max-width:768px){
+
+}
+
+/*desktop styles*/
+@media only screen and (min-width:769px){
+
+}
