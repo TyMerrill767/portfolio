@@ -16,8 +16,6 @@ FOOTER – Copyright
 
 Color Palette
 
-#1e2422 - Outer Space
-
 */
 
 /* ------------ ‘RESET ------------*/
@@ -52,9 +50,6 @@ header{
 
 /* ------------ ‘MAIN CONTENT------------*/
 /*global styles*/
-body{
-    font: 150% "Poiret One";
-}
 body p{
     padding-left: 10px;
 }
@@ -123,17 +118,98 @@ body ul{/*Strip all list styling for whole page*/
         background: linear-gradient(to bottom,  rgba(181,181,181,1) 1%,rgba(198,198,198,1) 4%,rgba(219,219,219,1) 48%,rgba(198,198,198,1) 97%,rgba(181,181,181,1) 100%); /* W3C */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5b5b5', endColorstr='#b5b5b5',GradientType=0 ); /* IE6-8 */
     }
+
+    #skill .chart{
+        border-bottom: 2px solid black;
+        display:table;
+        table-layout: fixed;
+        width:60%;
+        max-width:700px;
+        height:200px;
+        margin:0 auto;
+        background-image:linear-gradient(bottom, rgba(0, 0, 0, 0.1) 2%, transparent 2%);
+        background-size: 100% 50px;
+        background-position: left top;
+    }
+
+    #skill li{
+        position:relative;
+        display:table-cell;
+        vertical-align:bottom;
+        height:200px;
+    }
+
+    #skill span{
+        border-bottom: none;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        margin:0 1em;
+        display: block;
+        background: rgba(#d1ecfa, .75);
+        animation: draw 1s ease-in-out;
+        width: 95%;
+    }
+    #skill &:before{
+        position:absolute;
+        left:0;right:0;top:100%;
+        padding:5px 1em 0;
+        display:block;
+        text-align:center;
+        content:attr(title);
+        word-wrap: break-word;
+    }
+    #skill .skill{
+        color: #fff;
+        font: 80% Rokkitt, sans-serif;
+        text-align: center;
+    }
+    .skillname{
+        font-size: 175%;
+    }
+    .percent{
+        color: #fff;
+        font-size: 150%;
+        opacity: .8;
+    }
+    .x-axis{
+        font: 250% Rokkitt;
+        text-align: center;
+    }
+    .html{
+        border-left: 5px solid #B72222;
+        background: #F72E2E;
+    }
+    .css{
+        border-left: 5px solid #51A76A;
+        background: #70E793;
+    }
+    .js{
+        border-left: 5px solid #4F63B4;
+        background: #708CFF;
+    }
+    .ps{
+        border-left: 5px solid #C44B12;
+        background: #F05C16;
+    }
+    .php{
+        border-left: 5px solid #B4A82E;
+        background: #EFC62E;
+    }
+    .bootstrap{
+        border-left: 5px solid #4F1F5E;
+        background: #7C3194;
+    }
     .projects-container{
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-justify-content: flex-start;
-	-ms-flex-pack: start;
-	justify-content: flex-start;
-}
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
 }
 /* ------------ ‘SIDEBAR ------------*/
 /*global styles*/
