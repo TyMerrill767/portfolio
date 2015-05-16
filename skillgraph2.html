@@ -1,0 +1,107 @@
+<html>
+<link href='http://fonts.googleapis.com/css?family=Cabin|Rokkitt|BenchNine' rel='stylesheet' type='text/css'>
+<style type="text/css">
+.chart{
+  border-bottom: 2px solid black;
+  display:table;
+  table-layout: fixed;
+  width:60%;
+  max-width:700px;
+  height:200px;
+  margin:0 auto;
+
+  background-image:linear-gradient(bottom, rgba(0, 0, 0, 0.1) 2%, transparent 2%);
+  background-size: 100% 50px;
+  background-position: left top;
+}
+
+  li{
+    position:relative;
+    display:table-cell;
+    vertical-align:bottom;
+    height:200px;
+  }
+
+  span{
+    border-bottom: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin:0 1em;
+    display: block;
+    background: rgba(#d1ecfa, .75);
+    animation: draw 1s ease-in-out;
+    width: 85%;
+  }
+    &:before{
+      position:absolute;
+      left:0;right:0;top:100%;
+      padding:5px 1em 0;
+      display:block;
+      text-align:center;
+      content:attr(title);
+      word-wrap: break-word;
+    }
+    .skill{
+      color: #fff;
+      font: 80% Rokkitt, sans-serif;
+      text-align: center;
+    }
+    .skillname{
+        font-size: 175%;
+    }
+    .percent{
+        color: #fff;
+        font-size: 150%;
+        opacity: .8;
+    }
+    .x-axis{
+        font: 250% Rokkitt;
+        text-align: center;
+    }
+    .html{
+        border-left: 5px solid #B72222;
+        background: #F72E2E;
+    }
+    .css{
+        border-left: 5px solid #51A76A;
+        background: #70E793;
+    }
+    .js{
+        border-left: 5px solid #4F63B4;
+        background: #708CFF;
+    }
+    .ps{
+        border-left: 5px solid #C44B12;
+        background: #F05C16;
+    }
+    .php{
+        border-left: 5px solid #B4A82E;
+        background: #EFC62E;
+    }
+    .bootstrap{
+        border-left: 5px solid #4F1F5E;
+        background: #7C3194;
+    }
+</style>
+<ul class="chart">
+  <li>
+    <span style="height:95%" class="html skill" title="HTML"><div class="percent">95%</div><div class="skillname">HTML</div></span>
+  </li>
+  <li>
+    <span style="height:85%" class="css skill" title="CSS"><div class="percent">85%</div><div class="skillname">CSS</div></span>
+  </li>
+  <li>
+    <span style="height:45%" class="js skill" title="JavaScript"><div class="percent">45%</div><div class="skillname">JavaScript</div></span>
+  </li>
+    <li>
+    <span style="height:65%" class="ps skill" title="JavaScript"><div class="percent">65%</div><div class="skillname">Photoshop</div></span>
+  </li>
+  <li>
+    <span style="height:30%" class="php skill" title="PHP"><div class="percent">30%</div><div class="skillname">PHP</div></span>
+  </li>
+  <li>
+    <span style="height:75%" class="bootstrap skill" title="Bootstrap"><div class="percent">75%</div><div class="skillname">Bootstrap</div></span>
+  </li>
+</ul>
+<h3 class="x-axis">Skills</h3>
+</html>
