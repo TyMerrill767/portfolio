@@ -83,25 +83,24 @@ body ul{/*Strip all list styling for whole page*/
 }
 /*mobile styles*/
 @media only screen and (max-width:480px){
-    body{
-        background: #6C4A4A;
-    }
+
 }
 
 /*tablet styles*/
 @media only screen and (min-width: 481px) and (max-width:768px){
-    body{
-        background: #4D533C;
-    }
+
 }
 
 /*desktop styles*/
 @media only screen and (min-width:769px){
-    body{
-        background: #394953;
+    #about{
+        clear: both;
+        float: left;
+        height: 30em;
+        width: 70%;
     }
-    #about, #skill{
-        clear:both;
+    #skill{
+        clear: both;
         float: left;
         height: 30em;
         width: 100%;
@@ -127,8 +126,10 @@ body ul{/*Strip all list styling for whole page*/
         background: linear-gradient(to bottom,  rgba(181,181,181,1) 1%,rgba(198,198,198,1) 4%,rgba(219,219,219,1) 48%,rgba(198,198,198,1) 97%,rgba(181,181,181,1) 100%); /* W3C */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5b5b5', endColorstr='#b5b5b5',GradientType=0 ); /* IE6-8 */
     }
-
     #skill .chart{
+        background-image:linear-gradient(bottom, rgba(0, 0, 0, 0.1) 2%, transparent 2%);
+        background-size: 100% 50px;
+        background-position: left top;
         border-bottom: 2px solid black;
         border-left: 2px solid black;
         display:table;
@@ -138,18 +139,13 @@ body ul{/*Strip all list styling for whole page*/
         height: 100px;
         margin:0 auto;
         padding-top: 10px;
-        background-image:linear-gradient(bottom, rgba(0, 0, 0, 0.1) 2%, transparent 2%);
-        background-size: 100% 50px;
-        background-position: left top;
     }
-
     #skill li{
         position:relative;
         display:table-cell;
         vertical-align:bottom;
         height:200px;
     }
-
     #skill span{
         border-bottom: none;
         border-top-left-radius: 8px;
@@ -233,7 +229,7 @@ body ul{/*Strip all list styling for whole page*/
 footer{
     clear: both;
     text-align: center;
-    padding-top: 35em;
+    padding-top: 3em;
 }
 /*mobile styles*/
 @media only screen and (max-width:480px){
