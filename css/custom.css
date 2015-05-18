@@ -14,13 +14,16 @@ MAIN CONTENT - Articles, search results
 
 FOOTER – Copyright
 
+Background textures obtained from transparenttextures.com.
+
+
 Color Palette
 
 */
 
 /* ------------ ‘RESET ------------*/
 @import url("normalize.css");
-@import url(http://fonts.googleapis.com/css?family=Noto+Sans|Montserrat|Rokkitt);
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans|Montserrat|Rokkitt|Oswald);
 
 /* ------------ ‘HEADER ------------*/
 /*global styles*/
@@ -29,6 +32,9 @@ header{
     color: #fff;
     font: 100% Montserrat, sans-serif;
     text-align: center;
+}
+h2{
+    font: 175% Oswald !important;
 }
 .navbar{
     background: #000;
@@ -57,15 +63,12 @@ header{
 body{
     font: 200% "Noto Sans", sans-serif;
 }
-body p{
-    padding-left: 10px;
-}
-body h2{
-    padding-left: 5px;
-}
 body ul{/*Strip all list styling for whole page*/
     list-style-type: none;
     text-decoration: none;
+}
+#about, #project, #contact{
+    margin: 35px;
 }
 #project img{
 	width: 15em;
@@ -83,7 +86,9 @@ body ul{/*Strip all list styling for whole page*/
 }
 /*mobile styles*/
 @media only screen and (max-width:480px){
+    .projscrsht{
 
+    }
 }
 
 /*tablet styles*/
@@ -96,7 +101,7 @@ body ul{/*Strip all list styling for whole page*/
     #about{
         clear: both;
         float: left;
-        height: 30em;
+        height: 20em;
         width: 70%;
     }
     #skill{
@@ -114,7 +119,6 @@ body ul{/*Strip all list styling for whole page*/
 
     }
     #skill{
-        background: url(../images/diagmonds-light.png) #f7f7f7;
         background: rgb(181,181,181); /* Old browsers */
         /* IE9 SVG, needs conditional override of 'filter' to 'none' */
         background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iI2I1YjViNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQlIiBzdG9wLWNvbG9yPSIjYzZjNmM2IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNDglIiBzdG9wLWNvbG9yPSIjZGJkYmRiIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iOTclIiBzdG9wLWNvbG9yPSIjYzZjNmM2IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2I1YjViNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
@@ -227,9 +231,12 @@ body ul{/*Strip all list styling for whole page*/
 /* ------------ ‘FOOTER ------------*/
 /*global styles*/
 footer{
+    background: url(../images/diagmonds-light.png) #000;
     clear: both;
-    text-align: center;
+    color: #fff;
+    font-style: italic;
     padding-top: 3em;
+    text-align: center;
 }
 /*mobile styles*/
 @media only screen and (max-width:480px){
