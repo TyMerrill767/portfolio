@@ -55,7 +55,7 @@ header{
 /* ------------ ‘MAIN CONTENT------------*/
 /*global styles*/
 body{
-    font: 100% "Noto Sans", sans-serif;
+    font: 200% "Noto Sans", sans-serif;
 }
 body p{
     padding-left: 10px;
@@ -78,14 +78,9 @@ body ul{/*Strip all list styling for whole page*/
     /*border-left: 5px solid #B4A82E;
     background: #EFC62E;*/
     background: #fff;
-    border: 1px solid #000;
-    border-left: 5px solid #000;
-    border-left: 5px solid #000;
-    border-radius: 50px;
+    display: inline;
     padding: 5px;
-    width: 51%;
-}*/
-
+}
 /*mobile styles*/
 @media only screen and (max-width:480px){
     body{
@@ -176,7 +171,7 @@ body ul{/*Strip all list styling for whole page*/
     }
     #skill .skill{
         color: #fff;
-        font: 80% Rokkitt, Helvetica, sans-serif;
+        font: 60% Rokkitt, Helvetica, sans-serif;
         text-align: center;
     }
     .skillname{
