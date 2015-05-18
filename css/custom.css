@@ -20,14 +20,14 @@ Color Palette
 
 /* ------------ ‘RESET ------------*/
 @import url("normalize.css");
-@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400italic|Scheherazade|Poiret+One|Hind:500,400|Play:700);
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans|Montserrat|Rokkitt);
 
 /* ------------ ‘HEADER ------------*/
 /*global styles*/
 header{
     background: #000;
     color: #fff;
-    font: 100% "";
+    font: 100% Montserrat, sans-serif;
     text-align: center;
 }
 .navbar li a{
@@ -50,6 +50,10 @@ header{
 
 /* ------------ ‘MAIN CONTENT------------*/
 /*global styles*/
+body{
+    background: url(../images/escheresque.png);
+    font: 100% "Noto Sans", sans-serif;
+}
 body p{
     padding-left: 10px;
 }
@@ -68,8 +72,12 @@ body ul{/*Strip all list styling for whole page*/
 	margin: 0 3em 1.5em 0;
 }
 .restaurant, .techresearch, .discography{
+    /*border-left: 5px solid #B4A82E;
+    background: #EFC62E;*/
     background: #fff;
-    border: 2px solid #000;
+    border: 1px solid #000;
+    border-left: 5px solid #000;
+    border-left: 5px solid #000;
     border-radius: 50px;
     padding: 5px;
     width: 51%;
@@ -95,10 +103,10 @@ body ul{/*Strip all list styling for whole page*/
         background: #394953;
     }
     #about, #skill{
-    clear:both;
-    float: left;
-    height: 30em;
-    width: 100%;
+        clear:both;
+        float: left;
+        height: 30em;
+        width: 100%;
     }
     #project, #contact{
         float: right;
@@ -106,7 +114,7 @@ body ul{/*Strip all list styling for whole page*/
         padding-left: 400px;
     }
     #skill{
-        background: url(../images/diagonal-noise.png) #f7f7f7;
+        background: url(../images/diagmonds-light.png) #f7f7f7;
         background: rgb(181,181,181); /* Old browsers */
         /* IE9 SVG, needs conditional override of 'filter' to 'none' */
         background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iI2I1YjViNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQlIiBzdG9wLWNvbG9yPSIjYzZjNmM2IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNDglIiBzdG9wLWNvbG9yPSIjZGJkYmRiIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iOTclIiBzdG9wLWNvbG9yPSIjYzZjNmM2IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2I1YjViNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
@@ -121,12 +129,14 @@ body ul{/*Strip all list styling for whole page*/
 
     #skill .chart{
         border-bottom: 2px solid black;
+        border-left: 2px solid black;
         display:table;
         table-layout: fixed;
         width:60%;
         max-width:700px;
-        height:200px;
+        height: 100px;
         margin:0 auto;
+        padding-top: 10px;
         background-image:linear-gradient(bottom, rgba(0, 0, 0, 0.1) 2%, transparent 2%);
         background-size: 100% 50px;
         background-position: left top;
@@ -160,7 +170,7 @@ body ul{/*Strip all list styling for whole page*/
     }
     #skill .skill{
         color: #fff;
-        font: 80% Rokkitt, sans-serif;
+        font: 80% Rokkitt, Helvetica, sans-serif;
         text-align: center;
     }
     .skillname{
