@@ -211,11 +211,10 @@ body ul{/*Strip all list styling for whole page*/
         width: 70%;
     }
     #project{
-        float: right;
+
     }
     #project .content{
-        padding-right: 5px;
-        padding-left: 400px;
+
     }
     #skill{
         clear: both;
