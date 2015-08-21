@@ -145,14 +145,18 @@
            <div class="content">
                 <h2>I Like to Share!</h2>
                 <p>Got a question or comment about any of my sites? Want to know how I made something work? Or maybe you just want to drop me a line?  Feel free to contact me on Twitter or Facebook at the links below. I’m a busy guy, but I love sharing what I know and connecting with people, so I’ll try to get back to you as soon as I can. Thanks for coming!</p>
+               <p id="form_warning">Required Fields are marked with an asterisk(*)</p>
                 <form action="MAILTO:tyler_merrill2011@hotmail.com" method="post" enctype="text/plain">
                     <label for="namefield">*Name</label>
-                    <input id="namefield" type="text" name="name"/><br/>
+                    <input id="namefield" type="text" name="name" required/><br/>
 
                     <label for="emailfield">*Email</label>
-                    <input id="emailfield" type="email" name="name"/><br/>
+                    <input id="emailfield" type="email" name="name" required/><br/>
 
-                    <label for="comments">Comments</label>
+                    <label for="subjectfield">*Reason for Contacting</label>
+                    <input type="text" name="name" required><br />
+
+                    <label for="comments">Additional Comments</label>
                     <textarea id="comments" name="comments"></textarea><br/>
                     <input type="submit" name="submit" value="Send me a Message!" tabindex="90">
                 </form>

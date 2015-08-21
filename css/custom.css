@@ -49,6 +49,9 @@ header{
     text-align: center;
     width: 100%;
 }
+#logo:hover{
+    background: #0bb;
+}
 .navbar{
     background: #000;
 }
@@ -150,6 +153,10 @@ span.text-content {
 /*submission form styling*/
 #contact label{
     display: block;
+}
+#form_warning{
+    font-size: 75%;
+    font-style: italic;
 }
 /*mobile styles*/
 @media only screen and (max-width:480px){
