@@ -68,21 +68,21 @@
             <li>
                 <a href="http://inetstudent1.francistuttle.com/tm0864799/1stquarterproject/culinary/index.html">
                     <img src="images/d21min.png" alt="District 21 thumbnail">
-                    <span class="text-content"><span>District 21</span></span>
+                    <span class="text-content"><span>District 21<br /> Class project; informational site for fine dining restaurant (events and menu are fictional).</span></span>
                 </a>
             </li>
 
             <li>
                 <a href="http://inetstudent1.francistuttle.com/tm0864799/2ndquarterproject/techres/index.html">
                     <img src="images/libmin.png" alt="Tech Research thumbnail">
-                    <span class="text-content"><span>Tech Research</span></span>
+                    <span class="text-content"><span>Tech Research<br /> Class project; informational website for the Clef web plugin.</span></span>
                 </a>
             </li>
 
             <li>
                 <a href="http://inetstudent1.francistuttle.com/tm0864799/2ndquarterproject/discography/bootstrap/index.html">
                     <img src="images/discwingsmin.png" alt="Wings Discography thumbnail">
-                    <span class="text-content"><span>Wings Discography</span></span>
+                    <span class="text-content"><span>Discography<br /> Class project; single-page discography site for the band Wings.</span></span>
                 </a>
             </li>
         </ul>
@@ -92,8 +92,33 @@
     </div>
      </section>
        <section id="skill" class="chart">
+          <h2 id="chart-header">Skill Levels</h2>
            <div class="content">
-            <ul class="chart">
+                <div id="chart">
+                      <ul id="numbers">
+                        <li><span>100%</span></li>
+                        <li><span>90%</span></li>
+                        <li><span>80%</span></li>
+                        <li><span>70%</span></li>
+                        <li><span>60%</span></li>
+                        <li><span>50%</span></li>
+                        <li><span>40%</span></li>
+                        <li><span>30%</span></li>
+                        <li><span>20%</span></li>
+                        <li><span>10%</span></li>
+                        <li><span>0%</span></li>
+                      </ul>
+
+                      <ul id="bars">
+                            <li><div data-percentage="95" id= "bar1" class="bar"></div><span>HTML</span></li>
+                            <li><div data-percentage="85" id= "bar2" class="bar"></div><span>CSS</span></li>
+                            <li><div data-percentage="45" id= "bar3" class="bar"></div><span>JS</span></li>
+                            <li><div data-percentage="65" id= "bar4" class="bar"></div><span>Photoshop</span></li>
+                            <li><div data-percentage="25" id= "bar5" class="bar"></div><span>PHP</span></li>
+                            <li><div data-percentage="75" id= "bar6" class="bar"></div><span>Bootstrap</span></li>
+                      </ul>
+                </div>
+            <!--<ul class="chart">
                   <li>
                     <span style="height:95%" class="html skill" title="HTML"><p class="percent">95%</p><p class="skillname">HTML</p></span>
                   </li>
@@ -113,7 +138,7 @@
                     <span class="bootstrap skill" title="Bootstrap"><p class="percent">75%</p><p class="skillname">Bootstrap</p></span>
                   </li>
             </ul>
-            <h3 class="x-axis">Skills</h3>
+            <h3 class="x-axis">Skills</h3>-->
            </div>
         </section>
         <section id="contact">
@@ -121,10 +146,10 @@
                 <h2>I Like to Share!</h2>
                 <p>Got a question or comment about any of my sites? Want to know how I made something work? Or maybe you just want to drop me a line?  Feel free to contact me on Twitter or Facebook at the links below. I’m a busy guy, but I love sharing what I know and connecting with people, so I’ll try to get back to you as soon as I can. Thanks for coming!</p>
                 <form action="MAILTO:tyler_merrill2011@hotmail.com" method="post" enctype="text/plain">
-                    <label for="namefield">Name</label>
+                    <label for="namefield">*Name</label>
                     <input id="namefield" type="text" name="name"/><br/>
 
-                    <label for="emailfield">Email</label>
+                    <label for="emailfield">*Email</label>
                     <input id="emailfield" type="email" name="name"/><br/>
 
                     <label for="comments">Comments</label>
@@ -139,7 +164,10 @@
         </section>
     </main>
     <footer>
-        <p>Site design by Tyler Merrill.</p>         <script src="js/respond.min.js"></script>
+        <p>Site design by Tyler Merrill.</p>
+<script src="js/jquery.min.js"></script>
+<script>$(function() {  $("#bars li .bar").each( function( key, bar ) {    var percentage = $(this).data('percentage');        $(this).animate({      'height' : percentage + '%'    }, 1000);  });});</script>
+<script src="js/respond.min.js"></script>
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script>

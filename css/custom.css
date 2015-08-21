@@ -37,6 +37,7 @@ Color Palette
 
 /* ------------ ‘RESET ------------*/
 @import url("normalize.min.css");
+@import url("skillgraph.css");
 @import url(http://fonts.googleapis.com/css?family=Noto+Sans|Montserrat|Rokkitt|Oswald);
 
 /* ------------ ‘HEADER ------------*/
@@ -58,7 +59,7 @@ header{
 /* ------------ ‘MAIN CONTENT------------*/
 /*global styles*/
 body{
-    background-image: url(../images/test/squairy_light.png);
+    background-image: url(../images/squairy_light.png);
     font: 200% "Noto Sans", sans-serif;
 }
 h1{
@@ -82,108 +83,22 @@ body ul{/*Strip all list styling for whole page*/
     margin: 35px;
 }
 
-/*skill chart styling*/
-  #skill{
-        background: url(../images/test/1002_4352818.JPG);
-        background-position: center;
-        color: #fff;
-    }
-    #skill .chart{
-        background-size: 100% 50px;
-        background-position: left top;
-        border-bottom: 2px solid black;
-        border-left: 2px solid black;
-        display:table;
-        height: 100px;
-        margin:0 auto;
-        max-width:700px;
-        min-width: 700px;
-        padding-top: 10px;
-        table-layout: fixed;
-        width:60%;
-    }
-    #skill li{
-        position:relative;
-        display:table-cell;
-        vertical-align:bottom;
-        height:200px;
-    }
-    #skill span{
-        border-bottom: none;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
-        margin:0 1em;
-        display: block;
-        background: rgba(#d1ecfa, .75);
-        animation: draw 1s ease-in-out;
-        width: 95%;
-    }
-    #skill &:before{
-        position:absolute;
-        left:0;right:0;top:100%;
-        padding:5px 1em 0;
-        display:block;
-        text-align:center;
-        content:attr(title);
-        word-wrap: break-word;
-    }
-    #skill .skill{
-        color: #000;
-        font: 60% Rokkitt, Helvetica, sans-serif;
-        text-align: center;
-    }
-    .skillname{
-        font-size: 175%;
-    }
-    .percent{
-        color: #000;
-        font-size: 150%;
-        opacity: .5;
-    }
-    .x-axis{
-        font: 250% Rokkitt;
-        text-align: center;
-    }
-    .html{
-        border-left: 5px solid #B72222;
-        background: #F72E2E;
-    }
-    .css{
-        border-left: 5px solid #51A76A;
-        background: #70E793;
-    }
-    .js{
-        border-left: 5px solid #4F63B4;
-        background: #708CFF;
-    }
-    .ps{
-        border-left: 5px solid #C44B12;
-        background: #F05C16;
-    }
-    .php{
-        border-left: 5px solid #B4A82E;
-        background: #EFC62E;
-        height: 25%;
-    }
-    .bootstrap{
-        border-left: 5px solid #4F1F5E;
-        background: #7C3194;
-        height:75%
-    }
-    ul.img-list {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-    }
+/*project styling*/
 
-    ul.img-list li {
-        display: inline-block;
-        height: 150px;
-        margin: 0 6em 6em 0;
-        position: relative;
-        width: 150px;
-    }
+ul.img-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+ul.img-list li {
+    display: inline-block;
+    height: 150px;
+    margin: 0 6em 6em 0;
+    position: relative;
+    width: 150px;
+}
 
 span.text-content {
   background: rgba(0,0,0,0.5);
@@ -246,9 +161,6 @@ span.text-content {
         height: 10em;
         width: 10em;
     }
-    .chart{
-        display: none;
-    }
 }
 
 /*tablet styles*/
@@ -282,7 +194,8 @@ span.text-content {
     }
     #contact .content{
         padding-left: 5px;
-        padding-right: 400px;
+        padding-right: 50px;
+        width: 100%;
     }
 
 }

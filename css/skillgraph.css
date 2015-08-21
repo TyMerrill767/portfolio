@@ -1,0 +1,184 @@
+#bar1{
+    background-color: #F72E2E;
+}
+#bar1:hover{
+    background-color: #B72222;
+}
+#bar2{
+    background-color: #70E793;
+}
+#bar2:hover{
+    background-color: #51A76A;
+}
+#bar3{
+    background-color: #708CFF;
+}
+#bar3:hover{
+    background-color: #4F63B4;
+}
+#bar4{
+    background-color: #F4E43E;
+}
+#bar4:hover{
+    background-color: #B4A82E;
+}
+#bar5{
+    background-color: #E77B18;
+}
+#bar5:hover{
+    background-color: #C44B12;
+}
+#bar6{
+    background-color: #7C3194;
+}
+#bar6:hover{
+    background-color: #4F1F5E;
+}
+#chart{
+  width: 650px;
+  height: 300px;
+  margin: 30px auto 0;
+  display: block;
+}
+#chart #numbers{
+  width: 50px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  float: left;
+}
+#chart #numbers li{
+  text-align: right;
+  padding-right: 1em;
+  list-style: none;
+  height: 29px;
+  border-bottom: 1px solid #444;
+  position: relative;
+  bottom: 30px;
+}
+#chart #numbers li:last-child{
+  height: 30px;
+}
+#chart #numbers li span{
+  color: #eee;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+#chart #bars{
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.2);
+  width: 600px;
+  height: 300px;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 0 0 1px #444;
+}
+#chart #bars li{
+  display: table-cell;
+  width: 100px;
+  height: 300px;
+  margin: 0;
+  text-align: center;
+  position: relative;
+}
+#chart #bars li .bar{
+  display: block;
+  width: 70px;
+  margin-left: 15px;
+  position: absolute;
+  bottom: 0;
+}
+#chart #bars li span{
+  bottom: -2em;
+  color: #eee;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+#chart-header{
+   color:#fff;
+   text-align: center;
+}
+#skill{
+    background: #30303A;
+    padding: 5em;
+}
+
+@media only screen and (max-width:480px){
+    #chart{
+      display: block;
+      font: 40% Helvetica, sans-serif;
+      height: 200px;
+      margin: 10px auto 0;
+      width: 215px;
+    }
+    #chart #numbers{
+      width: 9px;
+      height: 95%;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      float: left;
+    }
+    #chart #numbers li{
+      text-align: right;
+      padding-right: 1em;
+      list-style: none;
+      height: 20px;
+      border-bottom: 1px solid #444;
+      position: relative;
+      bottom: 10px;
+    }
+    #chart #numbers li:last-child{
+      height: 60px;
+    }
+    #chart #numbers li span{
+      color: #eee;
+      position: absolute;
+      bottom: 0;
+      right: 10px;
+    }
+    #chart #bars{
+      display: inline-block;
+      background: rgba(0, 0, 0, 0.2);
+      width: 200px;
+      height: 190px;
+      padding: 0;
+      margin: 0;
+      box-shadow: 0 0 0 1px #444;
+    }
+    #chart #bars li{
+      display: table-cell;
+      width: 33px;
+      height: 190px;
+      margin: 0;
+      text-align: center;
+      position: relative;
+    }
+    #chart #bars li .bar{
+      display: block;
+      width: 17px;
+      margin-left: 15px;
+      position: absolute;
+      bottom: 0;
+    }
+    #chart #bars li span{
+      bottom: -2em;
+      color: #eee;
+      left: 0;
+      position: absolute;
+      width: 100%;
+    }
+    #chart-header{
+       color:#fff;
+       text-align: center;
+    }
+    #skill{
+        background: #30303A;
+        padding: 1em;
+    }
+
+}
