@@ -8,23 +8,10 @@
 <meta name="keywords" content="HTML, CSS, JavaScript, PHP, Photoshop, Web Design, coding">
 <link rel="stylesheet" href="css/custom.css">
 <link rel="stylesheet" href="css/bootstrap.min.css">
-<script src="js/respond.min.js"></script>
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-63133530-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 </head>
 <body>
     <header role="banner">
-    <img src="images/logoresize.png" alt="Tyler's Logo">
+    <img src="images/logoresize.png" id="logo" alt="Tyler's Logo">
     <h3>A Whole New Web Experience</h3>
        <nav class="navbar navbar-default" role="navigation">
             <div class="navbar-header">
@@ -48,8 +35,9 @@
     <main role="main">
       <section id="about">
         <div class="content">
+        <h1>Tyler Merrill Web Design</h1>
          <h2>All About Me</h2>
-          <p>Hello, and welcome to my site! I’m Tyler Merrill, a web developer, meaning I handle all the coding and programming of a website. This is where you’ll be able to see my work, or contact me if you have a question, comment, or have some work for me.I’m proficient in HTML, CSS, using frameworks such as Bootstrap, JavaScript, and  Each and every website I build is designed to be accessible – young or old, tech expert or technologically impaired, even the disabled.  Day by day, site by site, I’m going to do my best to make the web more beautiful. Come on in!</p>
+          <p>Hello, and welcome to my site! I’m Tyler Merrill, a web developer, meaning I handle all the coding and programming of a website. This is where you’ll be able to see my work, or contact me if you have a question, comment, or have some work for me. I’m proficient in HTML, CSS, using frameworks such as Bootstrap, JavaScript, and  Each and every website I build is designed to be accessible – young or old, tech expert or technologically impaired, even the disabled.  Day by day, site by site, I’m going to do my best to make the web more beautiful. Come on in!</p>
         </div>
     </section>
     <section id="project">
@@ -58,7 +46,7 @@
     <p>My websites are like my children, and you have to spoil your children, right? That’s why I try to go a little beyond the criteria when I build a website, whether it’s a bit of extra Javascript effects, thinking up a dynamic new layout, or testing the limits of a framework.</p>
     <div class="projects-container">
         <div class="restaurant">
-            <h3>Restaurant Website</h3>
+            <!--<h3>Restaurant Website</h3>
             <a href="http://inetstudent1.francistuttle.com/tm0864799/1stquarterproject/culinary/index.html"><img src="images/d21min.png" alt="restaurant site"></a>
             <p>This is the website I made for my first class project, to make a website for our campus fine dining restaurant, District 21. There are three pages: Home (which informs guests of upcoming events at the restaurant and can be returned to by clicking the banner images), About Us (which contains contact and location info for District 21), and Menu. It’s not very responsive, but it was my first ever site, so take this one with a grain of salt.<br />
     NOTE: This was just a class project; all the information on the Home and Menu pages is fictitious, though the contact info is accurate if you want to check them out!</p>
@@ -75,7 +63,29 @@
         <h3>Discography</h3>
         <a href="http://inetstudent1.francistuttle.com/tm0864799/2ndquarterproject/discography/bootstrap/index.html"><img src="images/discwingsmin.png" alt="discography" class="projscrsht"></a>
         <p>This is where things really started getting interesting. This was my first site made with a framework, namely Bootstrap, and the task was to create a discography for a band of our choice. I chose Wings, the second band of the legendary former Beatle, Paul McCartney. Here I expanded on everything I had taken away from previous projects, and even started incorporating some Javascript functionality courtesy of Bootstrap (click the album covers for collapsible tracklists!).</p>
-        <p>Skills used: HTML, CSS, Frameworks(Bootstrap), Responsive Design</p>
+        <p>Skills used: HTML, CSS, Frameworks(Bootstrap), Responsive Design</p>-->
+        <ul class="img-list">
+            <li>
+                <a href="http://inetstudent1.francistuttle.com/tm0864799/1stquarterproject/culinary/index.html">
+                    <img src="images/d21min.png" alt="District 21 thumbnail">
+                    <span class="text-content"><span>District 21</span></span>
+                </a>
+            </li>
+
+            <li>
+                <a href="http://inetstudent1.francistuttle.com/tm0864799/2ndquarterproject/techres/index.html">
+                    <img src="images/libmin.png" alt="Tech Research thumbnail">
+                    <span class="text-content"><span>Tech Research</span></span>
+                </a>
+            </li>
+
+            <li>
+                <a href="http://inetstudent1.francistuttle.com/tm0864799/2ndquarterproject/discography/bootstrap/index.html">
+                    <img src="images/discwingsmin.png" alt="Wings Discography thumbnail">
+                    <span class="text-content"><span>Wings Discography</span></span>
+                </a>
+            </li>
+        </ul>
         </div>
     </div>
     <p>More coming soon!</p>
@@ -108,9 +118,9 @@
         </section>
         <section id="contact">
            <div class="content">
-                <h2>I like to share!</h2>
+                <h2>I Like to Share!</h2>
                 <p>Got a question or comment about any of my sites? Want to know how I made something work? Or maybe you just want to drop me a line?  Feel free to contact me on Twitter or Facebook at the links below. I’m a busy guy, but I love sharing what I know and connecting with people, so I’ll try to get back to you as soon as I can. Thanks for coming!</p>
-                <form action="MAILTO:tyler_merrill2011@hotmail.com" method="post">
+                <form action="MAILTO:tyler_merrill2011@hotmail.com" method="post" enctype="text/plain">
                     <label for="namefield">Name</label>
                     <input id="namefield" type="text" name="name"/><br/>
 
@@ -123,7 +133,24 @@
                 </form>
            </div>
         </section>
+        <section>
+            <a href="https://www.facebook.com/profile.php?id=100009000343197"><img src="images/facebook.png" alt="Facebook thumbnail"></a>
+            <a href="https://twitter.com/TyMerrill767"><img src="images/twitter.png" alt="Twitter thumbnail"></a>
+        </section>
     </main>
-<footer>Site design by Tyler Merrill.This site was made for educational purposes.</footer>
+    <footer>
+        <p>Site design by Tyler Merrill.</p>         <script src="js/respond.min.js"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-63133530-1', 'auto');
+  ga('send', 'pageview');
+</script>
+    </footer>
 </body>
 </html>
