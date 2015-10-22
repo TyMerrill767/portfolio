@@ -165,13 +165,15 @@ span.text-content {
         height: 10em;
         width: 10em;
     }
+    #contact .content{
+        width: 80%;
+    }
+
 }
 
 /*tablet styles*/
 @media only screen and (min-width: 481px) and (max-width:768px){
-    .chart{
-        display: none;
-    }
+
 }
 
 /*desktop styles*/
@@ -199,7 +201,7 @@ span.text-content {
     #contact .content{
         padding-left: 5px;
         padding-right: 50px;
-        width: 100%;
+        width: 95%;
     }
 
 }
@@ -211,7 +213,6 @@ footer{
     color: #000;
     font-size: 50%;
     font-style: italic;
-    padding-top: 2em;
     text-align: center;
 }
 
